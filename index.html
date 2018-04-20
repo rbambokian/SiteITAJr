@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="A ITA Júnior é uma empresa de consultoria tecnológica, presente há 25 anos no mercado, formada por alunos de graduação do Instituto Tecnológico da Aeronáutica.">
+
+		<!--<title>Home | ITA Júnior</title>-->
+		<title>Home | ITA Júnior</title>
+
+		<!-- Favicon icon -->
+		<link rel="icon" href="resources/images/icons/IconeAviao.ico">
+
+		<!-- Reset CSS -->
+		<link rel="stylesheet" href="css/reset.css">
+
+	    <!-- Bootstrap Core CSS -->
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/itajrstyle.css">
+
+
+    	<!-- Área de Atuação JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(function(){
+				$('section#content article a.btn-atuacao').click(function(){
+					$(this).siblings('p.box').slideToggle();
+				});
+			});
+		</script>
+
+
+		<!-- Custom Fonts -->
+		<!-- Owl Carousel CSS -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+		<!-- Animate CSS -->
+    	<link href="css/animate.min.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+		
+		<!-- Navigation -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	               	<a class="navbar-brand" href="index">
+	                    <a href="#"><h1 class="LogoMenu">ITA Júnior</h1></a>
+	                    <!-- falta icone para versão mobile -->
+	                </a>
+	            </div> 
+
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right PecaProjeto">
+						<li><a href="#">PEÇA SEU PROJETO</a></li>
+					</ul>
+	            	<ul class="nav navbar-nav navbar-right SemProjeto">
+		            	<li><a href="#">Home</a></li>
+						<li><a href="#">Quem somos</a></li>
+						<li><a href="#">TIEJ</a></li>
+						<li><a href="#">Serviços</a></li>
+						<li><a href="#">Contato</a></li>
+					</ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container -->
+		</nav>
+
+		<main>
+			<!-- Banner -->
+			<div class="banner BackImage">
+				<img src="resources/images/LogoVertical.png" alt="ITA Júnior" height="30%" width="30%">
+				<p class="Branco">A excelência dos alunos do ITA no seu projeto</p> 
+			</div>
+
+		
+			<!-- Áreas de atuação -->
+			<section id="AreaAtuacao" class="BackGr">
+				<div class="container">
+					<div class="TituloTexto">
+						<div class="TituloMain Branco">
+							<h2>Áreas de</h2>
+							<h1>atuação</h1>
+						</div>
+						<div class="TextoAux Branco"><p>A excelência dos cursos do ITA e o apoio dos professores e dos parceiros são traduzidos em projetos que abrangem distintas áreas presentes na graduação da nossa instituição, com destaque no ramo de Tecnologia da Informação.</p></div>
+					</div>
+
+					<section id="content">
+						<article class="iconeAtuacao">
+							<a class="btn-atuacao"><img src="resources/images/icons/svg/Website.svg" alt="Website" class="Website" height="15%" width="15%"> <h3>Website</h3></a>
+							<p class="box">Tenha um website sob medida, desenvolvido com metodologias ágeis, tecnologia de ponta e com fácil gerenciamento de conteúdo.</p>
+						</article>
+
+						<article class="iconeAtuacao">
+							<a class="btn-atuacao"><img src="resources/images/icons/svg/Aplicativo.svg" alt="Aplicativos" class="Aplicativos" height="10%" width="10%"> <h3>Aplicativos</h3></a>
+							<p class="box">Desenvolvemos aplicativos multiplataformas atendendo as necessidades do seu projeto.</p>
+						</article>
+
+						<article class="iconeAtuacao">
+							<a class="btn-atuacao"><img src="resources/images/icons/svg/Ecommerce.svg" alt="E-commerce" class="Ecommerce" height="15%" width="15%"> <h3>E-commerce</h3></a>
+							<p class="box">Criamos uma loja virtual, com otimização do processo de vendas e facilidade nas transações.</p>
+						</article>
+
+						<article class="iconeAtuacao">
+							<a class="btn-atuacao"><img src="resources/images/icons/svg/AplicacoesWeb.svg" alt="Aplicações Web" class="AplicacoesWeb" height="15%" width="15%"> <h3>Aplicações Web</h3></a>
+							<p class="box">Formulamos automatizações online dos seus processos, sempre visando facilitar o acesso de seus clientes.</p>
+						</article>
+					</section>
+					<div class="VejaMais">
+						<a href="#">Veja mais</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Cases de Sucesso -->
+			<section id="Cases" class="BackGr BackImage">
+				<div class="container">
+					<div class="TituloMain Branco">
+						<h2>Cases de</h2>
+						<h1>sucesso</h1>
+					</div>
+
+
+					<div class="TodosOsCases">
+						<div class="SemTit">
+							<img src="resources/images/LogoITA.png" alt="ITA" class="ITA" height="32%" width="32%">
+							<div class="BlocoCinza">
+								<h3>Site Instituto Tecnológico de Aeronáutica (ITA)</h3>
+								<p class="LinkCase"><a href="http://www.ita.br/">http://www.ita.br/</a></p>
+								<p class="Descricao">Modernização da página virtual do Instituto Tecnológico de Aeronáutica.</p>
+							</div>
+						</div>
+
+						<div class="SemTit">
+							<img src="resources/images/LogoEz2pay.png" alt="Ez2pay" class="Ez2pay" height="32%" width="32%">
+							<div class="BlocoCinza">
+								<h3>Site ez2pay</h3>
+								<p class="LinkCase"><a href="http://ez2paybr.com/">http://ez2paybr.com/</a></p>
+								<p class="Descricao">Plataforma para realizar pagamentos online capaz de substituir moedas físicas por virtuais.</p>
+							</div>
+						</div>
+
+						<div class="SemTit SemTitCEE">
+							<img src="resources/images/LogoCEE.png" alt="CEE" class="CEE" height="32%" width="32%">
+							<div class="BlocoCinza">
+								<h3>Site Comissão de Estágios e Empregos (CEE)</h3>
+								<p class="LinkCase"><a href="http://www.estagiosita.com/">http://www.estagiosita.com/</a></p>
+								<p class="Descricao">Plataforma institucional da CEE para divulgação de eventos.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Nossos diferenciais -->
+			<section id="Diferenciais">
+				<div class="container">
+					<div class="TituloTexto">				
+						<div class="TituloMain Preto">
+							<h2>Nossos</h2>
+							<h1>diferenciais</h1>
+						</div>
+
+						<p class="TextoAux Preto TextoMargem">Mais do que satisfazer o cliente, nossa preocupação é oferece-lo a melhor solução. Para isso, contamos com diferenciais que mostram porque contratar a ITA Júnior é a melhor oportunidade de realizar seus objetivos.</p>
+					</div>
+
+					<div class="Bloco1">
+						<div class="BlocoDiferenciais">
+							<img src="resources/images/icons/Capacidade.png" alt="Capacidade" height="40%" width="40%">
+							<h3>Capacidade</h3>
+								<p>Nossos membros estão em treinamento constante e são orientados por professores de alto gabarito para realizar projetos que levam toda a excelência dos alunos do ITA.</p>
+						</div>
+						<div class="BlocoDiferenciais">
+							<img src="resources/images/icons/Tradicao.png" alt="Tradição" height="40%" width="40%">
+							<h3>Tradição</h3>
+								<p>Realizamos projetos com a qualidade de uma empresa júnior que está há 25 anos no mercado e conta com alunos de uma das melhores instituições de Engenharia do país.</p>
+						</div>
+						<div class="BlocoDiferenciais">
+							<img src="resources/images/icons/Exclusividade.png" alt="Exclusividade" height="40%" width="40%">
+							<h3>Exclusividade</h3>
+								<p>Todos os nossos projetos são feitos do zero e levam em conta as necessidades de cada cliente, com soluções customizadas a baixo custo se comparadas às empresas seniores.</p>
+						</div>
+					</div>
+					<div class="Bloco2">
+						<div class="BlocoDiferenciais">
+							<img src="resources/images/icons/PAlura.png" alt="Parceria Alura" height="40%" width="40%" class="ImagemAlura">
+							<h3>Parceria Alura</h3>
+								<p>Apoio da plataforma Alura que nos auxilia no conhecimento dos membros.</p>
+						</div>
+						<div class="BlocoDiferenciais">
+							<img src="resources/images/icons/Burocracia.png" alt="Menos burocracia" height="40%" width="40%">
+							<h3>Menos burocracia</h3>
+								<p>O dinamismo das empresas juniores reduz o tempo de negociação e de execução dos projetos.</p>
+						</div>
+						<div class="BlocoDiferenciais">
+							<img src="resources/images/icons/PrecosAbaixo.png" alt="Preços abaixo do mercado" height="40%" width="40%" class="ImagemPreco">
+							<h3>Preços abaixo do mercado</h3>
+								<p>Incentivos fiscais e estrutura enxuta de custos contribuem para projetos a preços reduzidos.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Nossos parceiros -->
+			<section id="Parceiros">
+				<div class="container">
+					<div class="TituloTexto">
+						<div class="TituloMain Preto">	
+							<h2>Nossos</h2>
+							<h1>parceiros</h1>
+						</div>
+
+						<p class="TextoAux Preto ">Grandes empresas que confiam no nosso potencial, nos dão o apoio necessário para capacitar nossos membros para entregarmos sempre os melhores resultados para o seu projeto.</p>
+					</div>
+
+					<div class="owl-carousel">
+						<div class="itemowl"><a href="https://www.alura.com.br/"><img src="resources/images/Alura.png" alt="Alura"></a></div>
+						<div class="itemowl"><a href="https://www.ambev.com.br/"><img src="resources/images/Ambev.png" alt="Ambev"></a></div>
+						<div class="itemowl"><a href="http://www.bain.com/offices/saopaulo/pt/index.aspx/"><img src="resources/images/Bain.png" alt="Bain"></a></div>
+						<div class="itemowl"><a href="https://www.itau.com.br/"><img src="resources/images/Itau.png" alt="Itau"></a></div>
+						<div class="itemowl"><a href="http://www.kroton.com.br/"><img src="resources/images/Kroton.png" alt="Kroton"></a></div>
+						<div class="itemowl"><a href="http://mbaempresarial.com.br/"><img src="resources/images/MBA.png" alt="MBA Empresarial"></a></div>
+						<div class="itemowl"><a href="http://www.suzano.com.br/"><img src="resources/images/Suzano.png" alt="Suzano"></a></div>
+					</div>
+				</div>
+			</section>
+
+
+        <footer id="Rodape" class="BackGr BackImage">
+		<!-- procurar formas de referenciar com o href jeito de mandar email ligar etc --> 
+		<img src="resources/images/background/BackRodape1.png" alt="">
+			<div class="container contBloco">
+				<div class="esqBloco">
+					<div class="Descric">
+						<div class="logofooter"><img src="resources/images/LogoRodape.png" alt="ITA Júnior - Consultoria Tecnológica" height="35%" width="35%"></div>
+						<p class="descRod">A ITA Júnior é uma empresa de consultoria tecnológica, presente há 25 anos no mercado, formada por alunos de graduação do Instituto Tecnológico da Aeronáutica.</p>
+					</div>
+				</div>
+
+				<div class="dirBloco">
+					<div class="cimabaixoBloco">
+						<div class="SubTit">
+							<h1>Encontre-nos</h1>
+						</div>
+
+						<div class="Bloquinho1">
+							<div class="Bloquinho">
+								<img src="resources/images/icons/svg/Mapa.svg" alt="Endereço" height="5%" width="5%" class="LogosIcones">
+								<h4>Praça Marechal Eduardo Gomes, nº 50, Vila das Acácias, DCTA - São José dos Campos</h4>
+							</div>
+
+							<div class="Bloquinho">
+								<img src="resources/images/icons/svg/Telefone.svg" alt="Telefone" height="5%" width="5%" class="LogosIcones">
+								<h4>(12) 98123-1698</h4>
+							</div>
+
+							<div class="Bloquinho">
+								<img src="resources/images/icons/svg/Email.svg" alt="E-mail" height="5%" width="5%" class="LogosIcones">
+								<h4>itajunior@itajunior.com.br</h4> 
+							</div>
+						</div>
+					</div>
+
+					<div class="cimabaixoBloco">
+						<div class="SubTit">
+							<h2>Acompanhe</h2>
+							<h1>nossas redes</h1>
+						</div>
+						
+						<div class="Bloquinho2 Bloquinho">
+							<img src="resources/images/icons/FacebookIcone.png" alt="Facebook" height="10%" width="10%" class="LogoFcbk">
+							<h4>/itajunior.ej</h4> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		</main>
+
+	    <!-- jQuery -->
+	    <script src="js/jquery.js"></script>
+	    <script src="js/jquery.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+
+	    <!-- Bootstrap Core JavaScript -->
+	    <script src="js/bootstrap.min.js"></script>
+
+	    <!-- Scrpit Owl Carousel -->
+	    <script>
+		$(document).ready(function(){
+		  $(".owl-carousel").owlCarousel({
+		  	items: 3,
+		  	autoplay: true,
+		  	loop: true,
+		  	autoplayTimeout:2500,
+
+		  	responsive: {
+		  		0: {
+		  			items: 1
+		  		},
+		  		768: {
+		  			items: 3,
+		  			margin: 20
+		  		},
+		  		992: {
+		  			items: 5,
+		  			margin: 20
+		  		}
+		  	}
+		  });
+		});
+	    </script>
+	</body>
+
+</html>

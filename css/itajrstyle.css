@@ -1,0 +1,932 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css?family=Barlow:200,300,400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+* { margin: 0; padding: 0; font-size: 100%; border: none; 
+	outline: none; box-sizing: border-box; line-height: 1.2;
+	font-family: 'Barlow', sans-serif !important; font-weight: 300;}
+a {text-decoration: none;}
+img {max-width: 100%;}
+
+/* Global Styles */
+
+main h2 {
+	margin: 0;
+	font-size: 32px;
+	padding-left: 20px;
+}
+
+main h1 {
+	margin: 0;
+	font-size: 40px;
+	padding-left: 20px;
+}
+
+.Preto {
+	color: #000000;
+}
+
+.Branco {
+	color: #FFFFFF;
+}
+
+.Amarelo {
+	color: #E1D201;
+}
+
+.Azul {
+	color: rgb(27, 45, 89);
+}
+
+.TextoBold {
+	font-weight: bold;
+}
+
+.TituloMain {
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-left-color: #E1D201;
+	float: left;
+	margin: 6%;
+	margin-bottom: 8%;
+	margin-left: 12%;
+	margin-top: 8%;
+}
+
+.TituloMainTwo {
+	border-left-color: #FFFFFF;
+}
+
+.titAm {
+	border-left-color: #FFFFFF;
+	font-size: 60px;
+}
+
+.TextoAux {
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.1em;
+	padding: 0% 10%;
+	padding-top: 3%;
+	padding-bottom: 2%;
+}
+
+.TextoAuxCursive {
+	font-family: 'Satisfy', cursive !important;
+	font-size: 2em !important;
+}
+
+.BoldInfo {
+	color: #E1D201;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+.TituloTexto {
+	display: flex;
+	flex-direction: column;
+}
+
+/*Default Background with Image */
+.BackImage { 
+	background-attachment: scroll;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*Default Background without Image*/
+.BackGr {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+	main h2 {
+		font-size: 38px;
+		padding-left: 20px;
+	}
+
+	main h1 {
+		font-size: 46px;
+		padding-left: 20px;
+	}
+
+	.TituloMain {
+		margin: 6%;
+		margin-bottom: 2%;
+		margin-right: 0.5%;
+	}
+
+	.TextoAux {
+		padding: 0 10%;
+		margin-top: 5px;
+		font-size: 1.3em;
+	/*terminar de ajeitar*/
+	}
+}
+
+
+/* Navbar changes */
+.LogoMenu {
+	font-size: 0px;
+	background: url(.../resources/images/LogoITAJunior.png) center center/25px no-repeat; /*dont work*/
+}
+
+.PecaProjetoMobile {
+	display: none;
+}
+ 
+.navbar-inverse {
+	border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+ 	background-color: #E1D201;
+}
+
+.navbar-toggle {
+    margin-top: 5px 0;
+    margin-right: 20px;
+    border: 1.3px solid transparent;
+    border-radius: 2px;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: #E1D201;
+}
+
+.navbar-inverse .navbar-toggle:hover, 
+.navbar-inverse .navbar-toggle:focus {
+	background-color: rgb(27, 45, 89);
+}
+
+
+
+.navbar-inverse {
+	background-color: rgb(27, 45, 89);
+	font-size: 130%;
+}
+
+.navbar-brand > img {
+  	width: auto;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:active{
+	color: #E1D201;
+	/*falta deixar amarela o nome da pagina atual qnd o usuario estiver nela*/
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: transparent;
+}
+
+.PecaProjeto {
+	font-size: 95%;
+	border-style: solid;
+	border-width: 1.5px;
+	border-color: #FFFFFF;
+	margin-top: 9px;
+	margin-left: 15px;
+}
+
+.PecaProjeto:hover, 
+.PecaProjeto:active {
+	border-color: #E1D201;
+	border-width: 2px;
+}
+
+.SemProjeto {
+	margin-top: 9px; /* ou 10px */
+}
+
+.navbar-nav > li > a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+/*imagem do logo ??????
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #E1D201;
+} 
+.navbar-inverse .navbar-text {
+  color: #f2f2f2;
+}*/
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  /* background-color: #E1D201; para o icone azul */
+}
+
+/* NO HOVER, ICONE FICAR AZUL !!!
+.navbar-inverse .navbar-toggle .icon-bar:hover {
+  background-color: rgb(27, 45, 89);
+}*/
+
+
+/*
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #f2f2f2;
+  background-color: #1c1b1b;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #f2f2f2;
+  background-color: #1c1b1b;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #f2f2f2;
+}
+/*
+.navbar-inverse .navbar-link {
+  color: #f2f2f2;
+}
+.navbar-inverse .navbar-link:hover {
+  color: #f2f2f2;
+}
+
+*/
+
+
+@media (max-width: 1023px) {
+	/*de tablet a desktop*/
+	/*logo ita junior e 3 pauzin*/
+
+}
+
+
+@media (max-width: 767px) {
+	/* de 0 a tablet*/
+	/*logo apenas aviao e 3 pauzin*/
+
+	.navbar-nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 0px;
+	}
+
+	.PecaProjeto {
+		border:hidden;
+		margin-top: 20px;
+		margin-left: 0;
+		padding: 0;
+	}
+
+	.PecaProjeto  > li > a {
+		border: solid;
+	}
+}
+
+/* Banner */
+.banner {
+	background-image: url(../resources/images/background/BackHome.png);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 80px;
+}
+
+.banner p {
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: 200;
+	width: 200px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #E1D201;
+	padding-top: 5px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.banner img {
+		margin-top: 18px;
+		height: 272.5px;
+		width: 239.17px;
+	}
+
+	.banner p {
+		font-size: 1.3em;
+		width: 300px;
+		margin-top: 15px;
+		margin-bottom: 23px;
+	}
+}
+
+/* Áreas de Atuação */
+#AreaAtuacao {
+	background-color: rgb(38, 40, 43);
+}
+
+.btn-atuacao h3 {
+	/* font-weight: bold; */
+	font-size: 18px;
+	float: center;
+	cursor: pointer;
+	text-align: center;
+	align-items: center;
+	margin: 0 0 -5px;
+	padding: 0 0 20px;
+	color: #FFFFFF;
+}
+
+.btn-atuacao:hover,
+.btn-atuacao:active,
+.btn-atuacao:visited,
+.btn-atuacao:link {
+	text-decoration: none;
+}
+
+.btn-atuacao img {
+	display: block;
+	margin: 0 auto;
+	padding: 20px 0 10px;
+}
+
+.box {
+	display: none;
+	text-align: center;
+	font-size: 14px;
+	background-color: rgb(27, 45, 89);
+	color: #FFFFFF;
+	margin-right: 20%;
+	margin-left: 20%;
+	padding: 15px;
+}
+
+.VejaMais {
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ 	text-align: center;
+ 	font-size: 13px;
+ 	margin: 10px 0 30px;
+}
+
+.VejaMais a {
+	color: #FFFFFF;
+}
+
+.VejaMais a:link {
+	text-decoration: none;
+	border-width: 1px;
+	border-style: solid;
+	padding: 5px 10px;
+	color: #E1D201;
+	margin-top: 20px;
+}
+
+.VejaMais a:hover {
+	 background: #E1D201;
+	 color: #FFF;
+	 border-color: #FFFFFF;
+}
+
+@media screen and (min-width: 500px) {
+	/* block pixel icons in "Áreas de Atuação" */
+	.Website {width: 86px;}
+	.Aplicativos {width: 58px;}
+	.Ecommerce {width: 95px;}
+	.AplicacoesWeb {width: 85px;}
+}
+
+@media screen and (min-width: 960px) {
+	#content {
+		display: flex;
+		flex-direction: row;
+		align-items: center;	
+		justify-content: center;
+	}
+
+	.iconeAtuacao {
+		margin: 5%;
+	}
+
+	.VejaMais {
+		margin-top: -20px;
+		margin-bottom: 40px;
+		font-size: 18px;
+		/*deixar o botão do lado direito*/
+	}
+}
+
+/* Cases de Sucesso */
+#Cases {
+	background-image: url(../resources/images/background/BackCases.png);	
+}
+
+.BlocoCinza { 
+	background: rgb(255, 255, 255) transparent;
+	background: rgba(255, 255, 255, 0.4);
+	/* Para navegadores IE 5.5 - 7 */
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=#000000);
+	/* Para navegadores IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=#000000)";
+	margin-bottom: 30px;
+	padding: 20px;
+}
+
+.TodosOsCases {
+	display: flex;
+	flex-direction: column;
+	margin-top: 160px;
+
+	@media screen and (min-width: 768px) {
+		margin-top: 165px;
+	}
+}
+
+.Descricao {
+	display: none;
+}
+
+@media screen and (min-width: 500px) {
+	/*bloquear o tamanho dos logo dos Cases de Sucesso*/
+	.ITA, .Ez2pay, .CEE {
+		width: 160px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.Descricao {
+
+	}
+}
+
+.SemTit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+#Cases img {
+	padding-bottom: 15px;
+}
+
+#Cases h3 {
+	color: rgb(35, 58, 117);
+	font-weight: 700;
+	width: 230px;
+	font-size: 16px;
+	margin: 0;
+}
+
+.LinkCase {
+	padding: 3px;
+	margin: 0;
+}
+
+.LinkCase a {
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+@media screen and (min-width: 500px) {
+	/* block logo sizes */
+	.ITA, .Ez2pay, .CEE {
+		width: 160px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+		/* Cases de sucesso - maior margin bottom */
+	.SemTitCEE {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+		/* CASES DE SUCESSO */
+	.TodosOsCases {
+		display: flex;
+		flex-direction: row;
+		align-self: center;
+		margin-top: 225px;
+	}
+
+	#Cases h3 {
+		width: 100%;
+		font-size: 18px;
+	}
+
+	.Descricao {
+		display: flex;
+		font-size: 16px;
+		color: #000000;
+	}
+
+	.BlocoCinza {
+		margin: 0 20px; 
+		max-width: 350px;
+	}
+
+	/* Cases de sucesso - maior margin bottom */
+	.SemTitCEE {
+		margin-bottom: 0px;
+	}
+
+	.SemTit {
+		margin-bottom: 50px;
+	}
+}
+
+
+
+
+
+
+/* Nossos Diferenciais */
+#Diferenciais {
+	background-color: rgb(245, 245, 245);
+}
+
+.Bloco1, .Bloco2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.BlocoDiferenciais p {
+	font-size: 15px;
+}
+
+.BlocoDiferenciais {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(35, 58, 117);
+	margin: 33px 67px;
+	padding: 10px;
+	padding-top: 40px;
+}
+
+.TextoMargem {
+	margin-bottom: 30px;
+}
+
+.BlocoDiferenciais img {
+	margin-top: -35%;
+	margin-bottom: 2%;
+}
+
+.BlocoDiferenciais .ImagemAlura {
+	margin-top: -30%;
+	margin-bottom: 2%;
+}
+
+.BlocoDiferenciais .ImagemPreco {
+	margin-top: -33%;
+	margin-bottom: 2%;
+}
+
+#Diferenciais h3 {
+	width: 150px;
+	font-weight: 700;
+	color: rgb(35, 58, 117);
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+@media screen and (min-width: 375px) {
+	/*bloquear o tamanho das caixinhas do nossos diferenciais*/
+	.BlocoDiferenciais {
+		width: 230px;
+		align-self: center; 
+	}
+}
+
+@media screen and (min-width: 768px) {
+	/* NOSSOS DIFERENCIAIS */
+	.Bloco1, .Bloco2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.BlocoDiferenciais {
+		margin: 25px 30px;
+	}
+}
+
+/*Nossos Parceiros*/
+#Parceiros p {
+	padding-bottom: 40px;
+}
+
+#Parceiros img {
+	width: 60%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Owl Carousel itens */
+.itemowl {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.owl-carousel {
+	margin-bottom: 50px;
+}
+
+/* Rodapé */
+
+#Rodape {
+	background-color: rgb(27, 45, 89);
+}
+
+.logofooter {
+	max-width: 520px;
+	margin: 10px 10px 20px 10px;
+}
+
+.descRod {
+	color: #FFFFFF;
+	max-width: 285px;
+	font-size: 12px;
+	margin-left: 5px;
+	margin-bottom: 25px; 
+
+	/* border */
+	/*
+	padding-bottom: 20px;
+	padding-right: 70px;
+	border-bottom-width: 1.5px;
+	border-bottom-style: solid;
+	border-bottom-color: #E1D201; */
+}
+
+.SubTit {
+	color: rgb(170, 181, 197);
+	margin: 15px 0;
+}
+
+.SubTit h1 {
+	font-size: 22px;
+}
+
+.SubTit h2 {
+	font-size: 14px;
+}
+
+h4 {
+	color: #FFFFFF;
+	font-size: 12px; 
+	max-width: 340px;
+}
+
+.Bloquinho {
+	display: flex;
+	flex-direction: row;
+}
+
+.Bloquinho h4 {
+	margin-left: 10px;
+	margin-top: 0; 
+}
+
+.Bloquinho2 {
+	margin-bottom: 10px;
+}
+
+.Bloquinho2 h4 {
+	font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+	.contBloco {
+		display: flex;
+		flex-direction: row;
+	}	
+
+	.dirBloco {
+		border-left-width: 3px;
+		border-left-style: solid;
+		border-left-color: #E1D201;
+		padding-left: 60px;
+		margin-bottom: 20px;
+		margin-left: 40px;
+	}
+
+	.cimabaixoBloco {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.Descric img {
+		width: 65%;
+	}
+
+	.descRod {
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.descRod {
+		max-width: 450px;
+	}
+
+	.SubTit h1 {
+	font-size: 28px;
+	}
+
+	.SubTit h2 {
+		font-size: 20px;
+	}
+
+	h4 {
+		font-size: 14px;
+		max-width: 200px;
+	}
+
+	.dirBloco {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+
+/* colar as coisas do lado direito no lado direito */
+/* ========= PÁGINA TIEJ ========= */	
+
+
+
+
+#Ctt {
+	background-image: url(../resources/images/background/BackContato.png);
+}
+
+.titCtt {
+	margin-top: 110px;
+}
+
+.textCtt {
+	margin-bottom: 30px;
+}
+
+.form-group {
+	max-width: 400px;
+}
+
+.BackCtt {
+	background-position: top;
+}
+
+.form-control {
+	border-radius: 0;
+	background: rgb(255, 255, 255) transparent;
+	background: rgba(255, 255, 255, 0.3); 
+}
+
+/*cor no placeholder - white*/
+
+.form-control:hover,
+.form-control:active,
+.form-control:focus {
+	background-color: #FFFFFF;
+	border-color: #000000;
+	box-shadow: inset 0 1px 1px #FFFFFF;
+}
+
+
+/* submit button */
+.btn-primary {
+	border-radius: 0;
+	color: #FFFFFF;
+	background-color: #E1D201;
+	border-color: #FFFFFF;
+	font-size: 17px;
+	margin-bottom: 90px;                                                    
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+	background-color: #FFFFFF;
+	color: #E1D201;
+}
+
+/* versão mobile - colocar uns paddings na esquerda e direita*/
+/*versao desktop - p colado no treco */
+
+
+#AvalieProjeto {
+	background-image: url(../resources/images/background/BackProjeto.png);
+}
+
+#inputState {
+	margin-left: -15px;
+}
+
+/* alterando cor do placeholder */
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #fff;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #fff;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #fff;
+}
+
+
+/* ========= PÁGINA SERVIÇOS ========= */	
+#ServicosGeral {
+	background-image: url(../resources/images/background/BackServicos2.png);
+}
+
+.BlocoSiteInst {
+	display: flex;
+	background-color: rgb(19, 19, 9);
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #E1D201;
+	margin: 33px 67px;
+	padding: 10px;
+	padding-top: 40px;
+}
+
+.MargemSuperior {
+	margin-top: 30px;
+}
+
+.MargemInferior {
+	margin-bottom: 30px;
+}
+
+.BlocoDiferenciais img {
+	margin-top: -35%;
+	margin-bottom: 2%;
+}
+
+.BlocoDiferenciais .ImagemAlura {
+	margin-top: -30%;
+	margin-bottom: 2%;
+}
+
+.BlocoDiferenciais .ImagemPreco {
+	margin-top: -33%;
+	margin-bottom: 2%;
+}
+
+#ServicosGeral h3 {
+	width: 150px;
+	font-weight: 500;
+	color: #FFFFFF;
+	margin-bottom: 15px;
+	font-size: 20px;
+	text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+	/*bloquear o tamanho das caixinhas do nossos diferenciais*/
+	.BlocoSiteInst {
+		width: 230px;
+		align-self: center; 
+	}
+}
+
+@media screen and (min-width: 768px) {
+	/* NOSSOS DIFERENCIAIS */
+	.Bloco1, .Bloco2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.BlocoSiteInst {
+		margin: 25px 30px;
+	}
+}
