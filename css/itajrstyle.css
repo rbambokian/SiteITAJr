@@ -56,6 +56,15 @@ main h1 {
 	border-left-color: #FFFFFF;
 }
 
+@media screen and (max-width: 768px) {
+	.TituloMainTwo {
+		margin-top: 80px;
+	}
+}
+
+/* TITULOMAINTWO PARA IPAD */
+
+
 .titAm {
 	border-left-color: #FFFFFF;
 	font-size: 60px;
@@ -886,21 +895,6 @@ h4 {
 	margin-bottom: 30px;
 }
 
-.BlocoDiferenciais img {
-	margin-top: -35%;
-	margin-bottom: 2%;
-}
-
-.BlocoDiferenciais .ImagemAlura {
-	margin-top: -30%;
-	margin-bottom: 2%;
-}
-
-.BlocoDiferenciais .ImagemPreco {
-	margin-top: -33%;
-	margin-bottom: 2%;
-}
-
 #ServicosGeral h3 {
 	width: 150px;
 	font-weight: 500;
@@ -928,5 +922,118 @@ h4 {
 
 	.BlocoSiteInst {
 		margin: 25px 30px;
+	}
+}
+
+/*============== PÁGINA TIEJ ==============*/
+#BannerTIEJ {
+	background-image: url(../resources/images/background/BackTIEJ.png);
+}
+
+#MotivosTIEJ {
+	background-image: url(../resources/images/background/BackMotivos.png);
+}
+
+#PalestraramTIEJ {
+	background-image: url(../resources/images/background/BackPalestrantes.png);
+}
+
+#GaleriaTIEJ {
+	background-color: rgb(242, 242, 242);
+}
+
+.SemTitT {
+	margin: 0 60px 50px;
+}
+
+.SemTitT h3 {
+	font-family: 'Satisfy', cursive !important;
+	font-size: 2em !important;
+	color: #E1D201;
+
+	display: flex;
+}
+
+.SemTitT {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.BlocoTransparenciaT { 
+	background: rgb(255, 255, 255) transparent;
+	background: rgba(255, 255, 255, 0.4);
+	/* Para navegadores IE 5.5 - 7 */
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=#000000);
+	/* Para navegadores IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=#000000)";
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+
+}
+
+.BlocoTransparenciaT p {
+	width: 250px;
+	color: #FFFFFF;
+}
+
+.BlocoCentro {
+	margin-top: 35px;
+	margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.DireitoCanto {
+	text-align: right;
+	margin: 45px 0;
+}
+
+.BlocoDiferenciais .Visibilidade {
+	margin-top: -28%;
+	margin-bottom: 2%;
+}
+
+.BlocoDiferenciais .Fortalecimento {
+	margin-top: -28%;
+	margin-bottom: 2%;
+}
+
+.DifH3 {
+	color: #E1D201;
+	font-size: 19px;
+}
+
+h4 {
+	font-weight: bold;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-left: 10px;
+}
+
+.PatrocinioEmpresas p {
+	color: #E1D201;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+.PatrocinioEmpresas {
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-left-color: #E1D201;
+	float: left;
+	margin-left: 3%;
+	margin-bottom: 5%;
+	margin-top: 2%;
+	align-items: left;
+	width: 200px;
+}
+
+
+@media screen and (max-width: 768px){
+	.PatrocinioEmpresas {
+		margin-left: 12%;
 	}
 }
