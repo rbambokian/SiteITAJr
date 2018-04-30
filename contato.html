@@ -76,21 +76,21 @@
 						<p class="TextoAux Branco textCtt">Fale conosco, solicite seu projeto e agende uma reunião.</p>
 					</div>
 
-					<form>
+					<form method="POST" action="envioemail.php">
 						<div class="form-group">
-							<input type="text" class="form-control" id="formCtt" placeholder="Seu nome">
+							<input type="text" name="nome" class="form-control" id="formCtt" placeholder="Seu nome">
 						</div>
 
 						<div class="form-group">
-							<input type="email" class="form-control" id="formCtt" aria-describedby="emailHelp" placeholder="Seu e-mail">
+							<input type="email" name="email" class="form-control" id="formCtt" aria-describedby="emailHelp" placeholder="Seu e-mail">
 						</div>
 
 						<div class="form-group">
-							<input type="number" class="form-control" id="formCtt" placeholder="Telefone e/ou Celular">
+							<input type="number" name="telefone" class="form-control" id="formCtt" placeholder="Telefone e/ou Celular">
 						</div>
 
 						<div class="form-group">
-							<textarea class="form-control" id="formCtt" placeholder="Digite sua mensagem"></textarea>
+							<textarea class="form-control" name="mensagem" id="formCtt" placeholder="Digite sua mensagem"></textarea>
 						</div>
 
 						<button type="submit" class="btn btn-primary">Enviar</button>
