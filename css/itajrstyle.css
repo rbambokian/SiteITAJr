@@ -137,6 +137,7 @@ main h1 {
 }
 
 
+
 /* Navbar changes */
 .LogoMenu {
 	font-size: 0px;
@@ -904,6 +905,20 @@ h4 {
 	text-align: center;
 }
 
+.CaixaTexto {
+	color: #FFFFFF;
+	padding: 20px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(27, 45, 89);
+	background: rgb(0, 0, 0) transparent;
+	background: rgba(0, 0, 0, 0.8);
+	/* Para navegadores IE 5.5 - 7 */
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=#000000);
+	/* Para navegadores IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=#000000)";
+}
+
 @media screen and (min-width: 375px) {
 	/*bloquear o tamanho das caixinhas do nossos diferenciais*/
 	.BlocoSiteInst {
@@ -925,6 +940,12 @@ h4 {
 	}
 }
 
+@media screen and (max-width: 768px) {
+
+	.TituloTexto .CaixaTexto {
+	}
+}
+
 /*============== PÁGINA TIEJ ==============*/
 #BannerTIEJ {
 	background-image: url(../resources/images/background/BackTIEJ.png);
@@ -932,6 +953,10 @@ h4 {
 
 #MotivosTIEJ {
 	background-image: url(../resources/images/background/BackMotivos.png);
+}
+
+#MotivosTIEJ .BlocoBottom {
+	margin-bottom: 50px;
 }
 
 #PalestraramTIEJ {
@@ -962,8 +987,8 @@ h4 {
 }
 
 .BlocoTransparenciaT { 
-	background: rgb(255, 255, 255) transparent;
-	background: rgba(255, 255, 255, 0.4);
+	background: rgb(0, 0, 0) transparent;
+	background: rgba(0, 0, 0, 0.7);
 	/* Para navegadores IE 5.5 - 7 */
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=#000000);
 	/* Para navegadores IE 8 */
@@ -971,12 +996,25 @@ h4 {
 	padding-top: 10px;
 	padding-right: 15px;
 	padding-left: 15px;
-
+	border-width: 3px;
+	border-style: solid;
+	border-color: rgb(27, 45, 89);
 }
 
 .BlocoTransparenciaT p {
 	width: 250px;
 	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.PatrocinioEmpresas {
+	background: rgb(0, 0, 0) transparent;
+	background: rgba(0, 0, 0, 0.3);
+	/* Para navegadores IE 5.5 - 7 */
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=#000000);
+	/* Para navegadores IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000, endColorstr=#000000)";
+	padding: 5px 20px;
 }
 
 .BlocoCentro {
@@ -989,6 +1027,7 @@ h4 {
 .DireitoCanto {
 	text-align: right;
 	margin: 45px 0;
+	margin-bottom: 0;
 }
 
 .BlocoDiferenciais .Visibilidade {
@@ -1014,9 +1053,9 @@ h4 {
 }
 
 .PatrocinioEmpresas p {
-	color: #E1D201;
 	font-size: 16px;
 	padding-left: 10px;
+	color: #E1D201;
 }
 
 .PatrocinioEmpresas {
@@ -1034,6 +1073,252 @@ h4 {
 
 @media screen and (max-width: 768px){
 	.PatrocinioEmpresas {
-		margin-left: 12%;
+		margin: 0 auto;
+		margin-bottom: 40px;
 	}
 }
+
+/*============ QUEM SOMOS ============*/
+
+#QuemSomosGeral {
+	background-color: rgb(38, 40, 43);
+}
+
+.CinzaFonte {
+	color: rgb(94, 98, 106);
+}
+
+.ControleLargura {
+	max-width: 500px;
+	text-align: left;
+	margin-left: -35px;
+}
+
+.TopoBaixo {
+	margin-top: 100px;
+}
+
+.imageITAJr {
+	background-image: url(../resources/images/esbocoITAJr.png);
+	width: 480px;
+	height: 200px;
+	z-index: 0;
+	margin-top: 90px;
+	margin-bottom: 30px;
+	/*top: -150px;
+	/*reduzir o tamanho da imagem*/	
+}
+
+.posicionarImagemITAJr {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+	.posicionarImagemITAJr {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.imageITAJr {
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	#QuemSomosGeral .TituloMain {
+	margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.imageITAJr {
+		display: none;
+	}
+}
+
+.TituloMain, .TextoAux {
+	z-index: 10;
+}
+
+#NossaHistoria {
+	background-image: url(../resources/images/background/BackHistoria.png);
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+header:after, #timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#timeline {
+  width: 100%;
+  margin: 30px auto;
+  margin-top: 0;
+  position: relative;
+  padding: 0 10px;
+}
+#timeline:before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: #E1D201;
+  left: 50%;
+  top: 0;
+  position: absolute;
+}
+#timeline:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+#timeline .timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+}
+#timeline .timeline-item img {
+	
+	width: 80%;
+	height: 80%;
+}
+#timeline .timeline-item .timeline-icon {
+  background: #E1D201;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  margin-left: -23px;
+}
+#timeline .timeline-item .timeline-icon img {
+  position: relative;
+  top: 9.5px;
+  left: 9.5px;
+  width: 60%;
+  height: 60%;
+}
+#timeline .timeline-item .timeline-content {
+  width: 45%;
+  background: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#timeline .timeline-item .timeline-content h2 {
+  padding: 15px;
+  background: #E1D201;
+  color: rgb(27, 45, 89);
+  margin: -20px -20px 0 -20px;
+  font-size: 15px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  font-weight: 600;
+}
+#timeline .timeline-item .timeline-content p {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	color: #000000;
+	font-size: 18px;
+}
+.minidesc {
+	font-size: 14px !important;
+	font-style: italic;
+}
+#timeline .timeline-item .timeline-content:before {
+  content: '';
+  position: absolute;
+  left: 45%;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #E1D201;
+}
+#timeline .timeline-item .timeline-content.right {
+  float: right;
+}
+#timeline .timeline-item .timeline-content.right:before {
+  content: '';
+  right: 45%;
+  left: inherit;
+  border-left: 0;
+  border-right: 7px solid #E1D201;
+}
+
+@media screen and (max-width: 768px) {
+  #timeline {
+    margin: 30px;
+    padding: 0px;
+    width: 90%;
+  }
+  #timeline:before {
+    left: 0;
+  }
+  #timeline .timeline-item .timeline-content {
+    width: 90%;
+    float: right;
+  }
+  #timeline .timeline-item .timeline-content:before, #timeline .timeline-item .timeline-content.right:before {
+    left: 10%;
+    margin-left: -6px;
+    border-left: 0;
+    border-right: 7px solid #E1D201;
+  }
+  #timeline .timeline-item .timeline-icon {
+    left: 0;
+  }
+
+  #timeline .timeline-item .timeline-content p {
+  	font-size: 14px;
+  }
+}
+
+/*======== GALERIA TIEJ ========*/
+#GaleriaTIEJ .itemowl {
+	margin: 30px;
+	margin-bottom: 0;
+}
+
+/* GAMBIARRA DO COROLHOOOOOOOOOOO */
+@media screen and (min-width: 768px) {
+	#GaleriaTIEJ .itemowl {
+		margin: 20%;
+		margin-bottom: 0;
+		margin-top: 30px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	#GaleriaTIEJ .itemowl {
+		margin: 30%;
+		margin-bottom: 0;
+		margin-top: 30px;
+	}
+}
+
