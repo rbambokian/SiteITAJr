@@ -1,6 +1,7 @@
 /* Reset */
 @import url('https://fonts.googleapis.com/css?family=Barlow:200,300,400,700,800');
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Kalam:700');
 * { margin: 0; padding: 0; font-size: 100%; border: none; 
 	outline: none; box-sizing: border-box; line-height: 1.2;
 	font-family: 'Barlow', sans-serif !important; font-weight: 300;}
@@ -8,7 +9,6 @@ a {text-decoration: none;}
 img {max-width: 100%;}
 
 /* Global Styles */
-
 main h2 {
 	margin: 0;
 	font-size: 32px;
@@ -81,7 +81,7 @@ main h1 {
 }
 
 .TextoAuxCursive {
-	font-family: 'Satisfy', cursive !important;
+	font-family: 'Kalam', cursive !important;
 	font-size: 2em !important;
 }
 
@@ -794,13 +794,17 @@ h4 {
 	}
 }
 
+.Copyright {
+	background-color: rgb(22, 28, 58);
+	font-size: 13px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 8px;
+}
+
 
 /* colar as coisas do lado direito no lado direito */
 /* ========= PÁGINA TIEJ ========= */	
-
-
-
-
 #Ctt {
 	background-image: url(../resources/images/background/BackContato.png);
 }
@@ -972,7 +976,7 @@ h4 {
 }
 
 .SemTitT h3 {
-	font-family: 'Satisfy', cursive !important;
+	font-family: 'Kalam', cursive !important;
 	font-size: 2em !important;
 	color: #E1D201;
 
@@ -1089,10 +1093,17 @@ h4 {
 }
 
 .ControleLargura {
-	max-width: 500px;
+	max-width: 450px;
 	text-align: left;
 	margin-top: 15px;
 	margin-left: -15px;
+}
+
+.ControleLargura2 {
+	max-width: 500px;
+	margin-top: 15px;
+	margin-left: -32px;
+	text-align: left;
 }
 
 .TopoBaixo {
@@ -1229,10 +1240,6 @@ header:after, #timeline .timeline-item:after, header:before, #timeline .timeline
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 #timeline .timeline-item .timeline-content h2 {
   padding: 15px;
