@@ -51,14 +51,14 @@
 
 	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right PecaProjeto">
-						<li><a href="#">PEÇA SEU PROJETO</a></li>
+						<li><a href="http://www.itajunior.com.br/pecaseuprojeto.html">PEÇA SEU PROJETO</a></li>
 					</ul>
 	            	<ul class="nav navbar-nav navbar-right SemProjeto">
-		            	<li><a href="#">Home</a></li>
-						<li><a href="#">Quem somos</a></li>
-						<li><a href="#">TIEJ</a></li>
-						<li><a href="#">Serviços</a></li>
-						<li><a href="#">Contato</a></li>
+		             	<li><a href="http://www.itajunior.com.br/">Home</a></li>
+						<li><a href="http://www.itajunior.com.br/">Quem somos</a></li>
+						<li><a href="http://www.itajunior.com.br/tiej.html">TIEJ</a></li>
+						<li><a href="http://www.itajunior.com.br/servicos.html">Serviços</a></li>
+						<li><a href="http://www.itajunior.com.br/contato.html">Contato</a></li>
 					</ul>
 	            </div>
 	            <!-- /.navbar-collapse -->
@@ -76,21 +76,21 @@
 						<p class="TextoAux Branco textCtt">Fale conosco, solicite seu projeto e agende uma reunião.</p>
 					</div>
 
-					<form>
+					<form method="POST" action="envioemail.php">
 						<div class="form-group">
-							<input type="text" class="form-control" id="formCtt" placeholder="Seu nome">
+							<input type="text" name="nome" class="form-control" id="formCtt" placeholder="Seu nome">
 						</div>
 
 						<div class="form-group">
-							<input type="email" class="form-control" id="formCtt" aria-describedby="emailHelp" placeholder="Seu e-mail">
+							<input type="email" name="email" class="form-control" id="formCtt" aria-describedby="emailHelp" placeholder="Seu e-mail">
 						</div>
 
 						<div class="form-group">
-							<input type="number" class="form-control" id="formCtt" placeholder="Telefone e/ou Celular">
+							<input type="number" name="telefone" class="form-control" id="formCtt" placeholder="Telefone e/ou Celular">
 						</div>
 
 						<div class="form-group">
-							<textarea class="form-control" id="formCtt" placeholder="Digite sua mensagem"></textarea>
+							<textarea class="form-control" name="mensagem" id="formCtt" placeholder="Digite sua mensagem"></textarea>
 						</div>
 
 						<button type="submit" class="btn btn-primary">Enviar</button>
