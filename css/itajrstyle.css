@@ -139,6 +139,22 @@ main h1 {
 
 
 /* Navbar changes */
+.navbar-brand {
+	margin-top: -33px;
+	margin-left: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+	.displayDesktop {
+		display: none;
+	}
+}
+@media screen and (min-width: 999px) {
+	.displayMobile {
+		display: none;
+	}
+}
+
 .LogoMenu {
 	font-size: 0px;
 	background: url(.../resources/images/LogoITAJunior.png) center center/25px no-repeat; /*dont work*/
@@ -849,6 +865,7 @@ h4 {
 
 #inputState {
 	margin-left: -15px;
+	color: rgb(140, 140, 140);
 }
 
 
@@ -1074,7 +1091,8 @@ h4 {
 .ControleLargura {
 	max-width: 500px;
 	text-align: left;
-	margin-left: -35px;
+	margin-top: 15px;
+	margin-left: -15px;
 }
 
 .TopoBaixo {
@@ -1088,8 +1106,14 @@ h4 {
 	z-index: 0;
 	margin-top: 90px;
 	margin-bottom: 30px;
+	margin-left: -130px;
 	/*top: -150px;
 	/*reduzir o tamanho da imagem*/	
+}
+
+.TextodaImagem {
+	display: flex;
+	flex-direction: column;
 }
 
 .posicionarImagemITAJr {
