@@ -807,8 +807,8 @@ h4 {
 
 .form-control {
 	border-radius: 0;
-	background: rgb(255, 255, 255) transparent;
-	background: rgba(255, 255, 255, 0.3); 
+	background: rgb(0, 0, 0) transparent;
+	background: rgba(0, 0, 0, 0.6); 
 }
 
 /*cor no placeholder - white*/
@@ -836,7 +836,7 @@ h4 {
 .btn-primary:active,
 .btn-primary:focus {
 	background-color: #FFFFFF;
-	color: #E1D201;
+	color: #E1D2	01;
 }
 
 /* versão mobile - colocar uns paddings na esquerda e direita*/
@@ -849,23 +849,6 @@ h4 {
 
 #inputState {
 	margin-left: -15px;
-}
-
-/* alterando cor do placeholder */
-::-webkit-input-placeholder { /* WebKit browsers */
-  color: #fff;
-}
-
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: #fff;
-}
-
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color: #fff;
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-  color: #fff;
 }
 
 
@@ -1322,3 +1305,6 @@ header:after, #timeline .timeline-item:after, header:before, #timeline .timeline
 	}
 }
 
+.controlTag {
+	width: 400px;
+}
